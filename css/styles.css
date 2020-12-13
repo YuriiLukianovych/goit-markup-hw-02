@@ -2,17 +2,25 @@
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  --accent-color: #2196f3;
+  --title-color: #212121;
+  --text-color: #757575;
+}
+
 body {
   color: #000000;
+  font-family: var(--main-font);
 }
 .adress {
   font-style: normal;
 }
-
-.header {
-}
+/* ---------------------------------- COMPONENTS -------------------------------- */
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -21,40 +29,70 @@ body {
   color: #000000;
 }
 .logo > span {
-  color: #2196f3;
+  color: var(--accent-color);
 }
+
+/* ---------------------------------- END COMPONENTS -------------------------------- */
+
+/*---------------------------- HEDER ----------------------------*/
+.header {
+}
+
 .navigation-list {
   list-style: none;
 }
 .navigation-list-item {
 }
-.navigation-link {
-  font-family: Roboto, sans-serif;
+.navigation-link,
+.contact-mail,
+.contact-phone {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #212121;
   text-decoration: none;
 }
-.navigation-link:hover,
-.navigation-link:focus {
-  color: #2196f3;
-}
-.adress {
+.navigation-link {
+  color: #212121;
 }
 .contact-mail,
 .contact-phone {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
   color: #757575;
 }
 .contact-mail:hover,
 .contact-phone:hover,
 .contact-mail:focus,
-.contact-phone:focus {
-  color: #2196f3;
+.contact-phone:focus,
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-color);
+}
+
+/* ------------------- HERO ---------------------------------- */
+
+.hero {
+  background-color: #2f303a;
+}
+.caption {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.modal-btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
 }
