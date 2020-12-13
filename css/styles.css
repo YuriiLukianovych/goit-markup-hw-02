@@ -1,5 +1,60 @@
-.project-title {
-  color: red;
-  font-size: 36px;
-  letter-spacing: 20%;
+/* Шрифты:
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+  color: #000000;
+}
+.adress {
+  font-style: normal;
+}
+
+.header {
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #000000;
+}
+.logo > span {
+  color: #2196f3;
+}
+.navigation-list {
+  list-style: none;
+}
+.navigation-list-item {
+}
+.navigation-link {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #2196f3;
+}
+.adress {
+}
+.contact-mail,
+.contact-phone {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.contact-mail:hover,
+.contact-phone:hover,
+.contact-mail:focus,
+.contact-phone:focus {
+  color: #2196f3;
 }
